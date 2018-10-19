@@ -1,0 +1,175 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\vspace*{\fill}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE Department of Computer and Information Sciences}\\[1.5cm] % Name of your university/college
+\textsc{\Large CS411 - Theory of Computation}\\[0.5cm] % Major heading such as course name
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Problems with Digital Evidence}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Name:}\\
+Douglas Keay % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Student No:} \\
+20144640 % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+\vspace*{\fill}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+
+\tableofcontents % Include a table of contents
+
+\clearpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+\setcounter{page}{1} % Set the page counter to 3
+
+\section{Introduction} % Major section
+
+Example citation \cite{ab94}
+
+%------------------------------------------------
+
+\subsection{Subsection 1} % Sub-section
+
+
+%------------------------------------------------
+
+\subsection{Subsection 2} % Sub-section
+
+
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 1} % Sub-sub-section
+
+
+
+\begin{figure}[H] % Example image
+%\center{\includegraphics[width=0.5\linewidth]{placeholder}}
+\caption{Example image.}
+\label{fig:speciation}
+\end{figure}
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 2} % Sub-sub-section
+
+
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Content Section} % Major section
+
+
+%------------------------------------------------
+
+\subsection{Subsection 1} % Sub-section
+
+\subsubsection{Subsubsection 1} % Sub-sub-section
+
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 2} % Sub-sub-section
+
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 3} % Sub-sub-section
+
+\begin{description} % Numbered list example
+
+\item[First] \hfill \\
+
+
+\item[Second] \hfill \\
+
+\item[Third] \hfill \\
+
+
+\end{description} 
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION X - TEMPLATE - UNCOMMENT AND FILL IN
+%----------------------------------------------------------------------------------------
+
+%\section{Content Section}
+
+%\subsection{Subsection 1} % Sub-section
+
+% Content
+
+%------------------------------------------------
+
+%\subsection{Subsection 2} % Sub-section
+
+% Content
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\section{Conclusion} % Major section
+
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\bibliographystyle{plain}
+\bibliography{CS414Bib}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
